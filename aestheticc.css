@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Bebas+Neue&display=swap');
+
+body {
+  background-color: black;
+  background-image: url("https://www.setaswall.com/wp-content/uploads/2017/06/Material-Backgrounds-07-2048-x-1197.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+}
+
+h1, h2, h3, p, label {
+  color: whitesmoke;
+}
+
+.topbar {
+  background-color: black;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgb(50, 50, 50);
+}
+
+.toptab {
+  margin-left: 5px;
+  height: 60px;
+  padding-right: 5px;
+  border-right: 1px solid rgb(50, 50, 50);
+}
+
+.topbar > h1 {
+  line-height: 69px;
+}
+
+.smol {
+  font-size: 16px;
+}
+
+.smth {
+  line-height: 67px;
+}
+
+.actualcontent {
+  margin-left: 20px;
+}
+
+p {
+  font-family:'Archivo Narrow', sans-serif;
+  font-size: 20px;
+}
