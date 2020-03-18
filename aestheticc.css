@@ -12,6 +12,10 @@ h1, h2, h3, p, label, a {
   color: whitesmoke;
 }
 
+a {
+  text-decoration: none;
+}
+
 .topbar {
   background-color: black;
   height: 60px;
@@ -32,11 +36,17 @@ h1, h2, h3, p, label, a {
   padding-left: 5px;
   border-left: 1px solid rgb(50, 50, 50);
   border-right: 1px solid rgb(50, 50, 50);
+  transition: background-color 0.2s;
+}
+
+.toptab:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .topbar > h1 {
+  margin-left: 0px;
   line-height: 69px;
-  padding-left: 0px;
+  padding-left: 5px;
   border-left: 0px solid rgb(50, 50, 50);
 }
 
