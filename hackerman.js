@@ -1,6 +1,6 @@
 let topbarhtml = `<header class="topbar">
             <div class="toptab">
-                <img class="icon" src="https://raw.githubusercontent.com/Driftini/tfs/master/favicon.ico">
+                <img class="icon" src="favicon.ico">
                 <h1>THE FROGGY SHRINE <i class="smol">(aka Driftini's website)</i></h1>
             </div>
             <a class="toptext toptab" href="index.html"><span>Home</span></a>
