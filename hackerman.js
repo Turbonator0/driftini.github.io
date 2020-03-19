@@ -7,4 +7,4 @@ let topbarhtml = `<header class="topbar">
             <a class="toptext toptab" href="4m.html"><span>Project 4Modes</span></a>
             <a class="toptext toptab" href="w103.html"><span>Win103</span></a>
         </header>`;
-document.getElementById("barhere").innerHTML = topbarhtml;
+window.onload = function summonbar() {document.getElementById("barhere").innerHTML = topbarhtml;}
