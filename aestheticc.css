@@ -27,12 +27,15 @@ a {
   font-size: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
   border-bottom: 1px solid rgb(50, 50, 50);
+  justify-content: space-between;
 }
 
 .toptab {
+  margin-left: 5px;
   height: 60px;
   padding-right: 5px;
   padding-left: 5px;
+  border-left: 1px solid rgb(50, 50, 50);
   border-right: 1px solid rgb(50, 50, 50);
   transition: background-color 0.2s;
   display: flex;
@@ -42,32 +45,21 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.topbar > h1 {
 .toptab > h1 {
   margin-left: 0px;
+  line-height: 69px;
   padding-left: 5px;
+  border-left: 0px solid rgb(50, 50, 50);
   align-self: center;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .smol {
   font-size: 16px;
 }
 
-.actualcontent {
-  margin-left: 20px;
-  margin-right: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  font-family: 'Archivo Narrow', sans-serif;
-  font-size: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-}
-
-.icon {
-  image-rendering: crisp-edges;
-  height: 64px;
+.smth {
+.toptext {
+  line-height: 67px;
 }
