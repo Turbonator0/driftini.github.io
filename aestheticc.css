@@ -45,7 +45,6 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.topbar > h1 {
 .toptab > h1 {
   margin-left: 0px;
   line-height: 69px;
@@ -59,7 +58,6 @@ a {
   font-size: 16px;
 }
 
-.smth {
 .toptext {
   line-height: 67px;
 }
