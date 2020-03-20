@@ -20,7 +20,7 @@ a {
 .topbar {
   background-color: black;
   height: 60px;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   font-family: 'Bebas Neue', cursive;
