@@ -12,7 +12,7 @@ let topbarhtml = `<header class="topbar">
 window.onload = function summonbar() {document.getElementById("barhere").innerHTML = topbarhtml};
 
 function appendNewsItemBackground(title, body, date, id, img, bg) {
-  let newsItem = `<div class="newsitem" style="background-image:url("${bg}"); background-size:cover; background-repeat:no-repeat">
+  let newsItem = `<div class="newsitem" id="${id}" style="background-image:url("${bg}"); background-size:cover; background-repeat:no-repeat">
             <h3>${title}</h3>
             <div class="flexrow">
               <p>${body}</p>
@@ -22,13 +22,12 @@ function appendNewsItemBackground(title, body, date, id, img, bg) {
           </div>`
   let newsObject = document.createElement("div")
   newsObject.innerHTML = newsItem
-  newsObject.id = id
   
   document.getElementById("newshere").appendChild(newsObject)
 }
 
 function appendNewsItemImg(title, body, date, img, id) {
-  let newsItem = `<div class="newsitem">
+  let newsItem = `<div class="newsitem" id="${id}">
             <h3>${title}</h3>
             <div class="flexrow">
               <p>${body}</p>
@@ -38,20 +37,18 @@ function appendNewsItemImg(title, body, date, img, id) {
           </div>`
   let newsObject = document.createElement("div")
   newsObject.innerHTML = newsItem
-  newsObject.id = id
           
   document.getElementById("newshere").appendChild(newsObject)
 }
 
 function appendNewsItem(title, body, date, id) {
-  let newsItem = `<div class="newsitem">
+  let newsItem = `<div class="newsitem" id="${id}">
             <h3>${title}</h3>
             <p>${body}</p>
             <footer style="font-size:15px"><i>${date}</i></footer>
           </div>`
   let newsObject = document.createElement("div")
   newsObject.innerHTML = newsItem
-  newsObject.id = id
           
   document.getElementById("newshere").appendChild(newsObject)
 }
