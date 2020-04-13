@@ -20,10 +20,15 @@ div {
   display: flex;
 }
                 </style>
+        <script>
+                function rick() {
+                document.getElementById("bruh").play()
+                }
+        </script>
 </head>
-<body>
+<body onload="rick()">
 <div>
-<video autoplay="autoplay" controls loop>
+<video id="bruh" autoplay="autoplay" loop>
   <source src="hentai.mp4" type="video/mp4">
   <source src="hentai.webm" type="video/webm">
 </video>
