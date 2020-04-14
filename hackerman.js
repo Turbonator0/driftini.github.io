@@ -27,7 +27,7 @@ function appendNewsItemImgBg(title, body, date, id, img, bg) {
 }
 
 function appendNewsItemBg(title, body, date, id, bg) {
-  let newsItem = `<div class="newsitem" id="${id}" style="background-image:url("${bg}") !important; background-size:cover; background-repeat:no-repeat">
+  let newsItem = `<div class="newsitem" id="${id}" style="background-image:url('${bg}') !important; background-size:cover; background-repeat:no-repeat">
             <h3>${title}</h3>
             <p>${body}</p>
             <footer style="font-size:15px"><i>${date}</i></footer>
