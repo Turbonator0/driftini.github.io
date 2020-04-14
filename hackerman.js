@@ -11,7 +11,7 @@ let topbarhtml = `<header class="topbar">
         
 window.onload = function summonbar() {document.getElementById("barhere").innerHTML = topbarhtml};
 
-function appendNewsItemBackground(title, body, date, id, img, bg) {
+function appendNewsItemImgBg(title, body, date, id, img, bg) {
   let newsItem = `<div class="newsitem" id="${id}" style="background-image:url("${bg}"); background-size:cover; background-repeat:no-repeat">
             <h3>${title}</h3>
             <div class="flexrow">
@@ -26,7 +26,19 @@ function appendNewsItemBackground(title, body, date, id, img, bg) {
   document.getElementById("newshere").appendChild(newsObject)
 }
 
-function appendNewsItemImg(title, body, date, img, id) {
+function appendNewsItemBg(title, body, date, id, bg) {
+  let newsItem = `<div class="newsitem" id="${id}" style="background-image:url("${bg}"); background-size:cover; background-repeat:no-repeat">
+            <h3>${title}</h3>
+            <p>${body}</p>
+            <footer style="font-size:15px"><i>${date}</i></footer>
+          </div>`
+  let newsObject = document.createElement("div")
+  newsObject.innerHTML = newsItem
+  
+  document.getElementById("newshere").appendChild(newsObject)
+}
+
+function appendNewsItemImg(title, body, date, id, img) {
   let newsItem = `<div class="newsitem" id="${id}">
             <h3>${title}</h3>
             <div class="flexrow">
