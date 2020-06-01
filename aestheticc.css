@@ -9,7 +9,7 @@ body {
   margin: 0px;
 }
 
-h1, h2, h3, p, label, a, #topbar a, footer {
+h1, h2, h3, p, label, a, #topbar a, footer, div, span, #jumpselect {
   color: white;
   text-shadow: black 1px 1px 5px;
   text-decoration: none;
@@ -38,10 +38,11 @@ a:hover {
   font-family: 'Bebas Neue', cursive;
   font-size: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
-  border-bottom: 1px solid rgb(50, 50, 50);
+  border-bottom: 1px solid #333;
   animation-name: bardown;
   animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(.22,.61,.36,1);
+  user-select: none;
 }
 
 #topbar * {
@@ -66,7 +67,7 @@ a:hover {
   height: 60px;
   padding-right: 5px;
   padding-left: 5px;
-  border-right: 1px solid rgb(50, 50, 50);
+  border-right: 1px solid #333;
   transition: background-color 0.2s;
   display: flex;
   justify-content: center;
@@ -152,4 +153,36 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.newsSettings {
+  width: 90%;
+  justify-content: right;
+  margin-bottom: 20px;
+}
+
+#jumper {
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.flexrow > span:nth-child(1) {
+  background-color: black;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+  border: 1px solid #333;
+  transition: background-color 0.2s
+}
+
+.flexrow > span:nth-child(1):hover {
+  background-color: #333;
+}
+
+#jumpselect {
+  background-color: transparent;
+  border: none;
+  height: 62px;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 30px;
+  padding: 6px;
 }
