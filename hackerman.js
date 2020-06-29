@@ -1,12 +1,17 @@
 let topbarhtml = `<header id="topbar">
-            <div class="toptab">
+            <a class="toptab" href="news.html"><span>News</span></a>
+            <a class="toptab" href="index.html">
                 <img class="icon" src="aniicon.gif">
-                <h1>THE FROGGY SHRINE <i class="smol">(aka Driftini's website)</i></h1>
-            </div>
-            <a class="toptext toptab" href="index.html"><span>Home</span></a>
-            <a class="toptext toptab" href="news.html"><span>News</span></a>
-            <a class="toptext toptab" href="wip.html"><span>Project 4Modes</span></a>
-            <a class="toptext toptab" href="wip.html"><span>Win103</span></a>
+                <h1>THE FROGGY SHRINE</h1>
+            </a>
+            <span class="toptab projects">
+              <span>Projects</span>
+              <div class="projectsdropdown">
+                <a href="wip.html">Pancake</a>
+                <a href="wip.html">4Modes</a>
+              </div> 
+            </span>
+            
         </header>`;
         
 window.onload = function summonbar() {document.getElementById("barhere").innerHTML = topbarhtml};
