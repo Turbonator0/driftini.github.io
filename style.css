@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,300;1,600&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+:root {
+    --main: #d4e0e6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding-top: 60px;
+    background-color: #23232e;
+    background-image: url("res/bg.svg");
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--main);
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+a * {
+    cursor: pointer;
+}
+
+.content {
+    filter: drop-shadow(1px 1px 3px #000);
+    margin: 0 30px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #223;
+    box-shadow: 0 0 30px -5px #000, 0 0 5px -5px #000;
+}
+
+.navleft, .navright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navleft img {
+    width: 30px;
+    height: 30px;
+    image-rendering: crisp-edges;
+}
+
+.navleft label {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.navpart {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navpart {
+    color: var(--main);
+    filter: brightness(0.8);
+    text-decoration: none;
+    user-select: none;
+}
+
+.navpart:hover {
+    filter: brightness(1)
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    padding: 40px 40px 50px 40px;
+    max-height: 264px;
+    margin-top: 20px;
+    background-color: #112;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 0 0 30px -5px #000, 0 0 5px -5px #000;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footcol {
+    height: 142px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 1px var(--main) solid;
+}
+
+footer .footcol:last-child {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+footer ul b {
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-weight: 100;
+}
+
+.social {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social > a {
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 2px var(--main) solid;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 30px;
+}
+
+.social_tw {
+    background: url(res/social/twitter.svg);
+}
+
+.social_tw:hover {
+    filter: saturate(2300%) brightness(60%) hue-rotate(205deg) invert(100%);
+}
+
+.social_dc {
+    background: url(res/social/discord.svg);
+}
+
+.social_dc:hover {
+    filter: saturate(2000%) hue-rotate(250deg) invert(100%) brightness(400%);
+}
+
+.social_yt {
+    background: url(res/social/youtube.svg);
+}
+
+.social_yt:hover {
+    filter: saturate(1600%) invert(100%);
+}
+
+.social_ms {
+    background: url(res/social/myspace.svg);
+}
+
+.social_ms:hover {
+    filter: saturate(2000%) hue-rotate(220deg) invert(100%);
+}
+
+.social_gh {
+    background: url(res/social/github.svg);
+}
+
+.social_gh:hover {
+    filter: brightness(40%) saturate(50%);
+}
+
+@media only screen and (max-width: 800px) {
+    .navleft label {
+        display: none;
+    }
+    
+    footer {
+        max-height: revert;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .footcol {
+        border-right: none;
+        padding-right: 0;
+        margin-right: 0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px var(--main) solid;
+    }
+    
+    footer ul {
+        margin: 0;
+    }
+}
