@@ -8,6 +8,7 @@
     background-color: #00000075;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: 50%;
     display: none;
 }
 
@@ -98,12 +99,35 @@
     background: #8d9;
 }
 
+.download.preview {
+    background: #aab;
+    cursor: pointer;
+}
+
+.download.preview:hover, .download.preview:focus {
+    background: #ccd;
+}
+
 @media only screen and (max-width: 800px) {
     .wplist li {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
     
     .wplist li > img {
-        max-width: 120px;
+        max-width: 100%;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+    
+    .wplist li > h2 {
+        width: 100%;
+        right: revert;
+        text-align: center;
+    }
+    
+    .dlcontainer {
+        right: revert;
     }
 }
