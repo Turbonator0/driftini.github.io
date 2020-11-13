@@ -9,13 +9,13 @@ for (let i = 0; i < wps.length; i++) {
     hd.innerText = "1280x720 (HD)"
     hd.classList.add("download")
     hd.href = wps[i].src
-    hd.download = true
+    hd.download = ""
     
     let fhd = document.createElement("a")
     fhd.innerText = "1920x1080 (Full HD)"
     fhd.classList.add("download")
     fhd.href = wps[i].dataset.fhd
-    fhd.download = true
+    fhd.download = ""
     
     let title = document.createElement("h2")
     title.innerText = wps[i].title
