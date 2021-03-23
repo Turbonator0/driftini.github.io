@@ -17,7 +17,7 @@ footer.innerHTML = `
     <li><a>93Tweaks</a></li>
     <!-- <li><a>TweakStore</a></li>
     <li><a>TAWM</a></li> -->
-    <li><a>DStore</a></li>
+    <li><a>Ease</a></li>
 </ul>
 `
 

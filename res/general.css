@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,300;1,600&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
 :root {
     --main: #d4e0e6;
+    --hlnk: #a7c3ec;
 }
 
 * {
@@ -42,8 +42,27 @@ a * {
 }
 
 .content p a {
-    color: var(--main);
+    color: var(--hlnk);
+    text-decoration-line: none;
 }
+
+.content p a:hover {
+    text-decoration-line: underline;
+}
+
+.hflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.vflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
 
 nav {
     position: fixed;
@@ -73,8 +92,10 @@ nav {
 }
 
 .navleft label {
-    font-size: 24px;
     margin-left: 10px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .navpart {
@@ -135,7 +156,7 @@ footer .footcol:last-child {
 
 footer ul b {
     font-size: 30px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 100;
 }
 
