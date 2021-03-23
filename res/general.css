@@ -51,18 +51,18 @@ a * {
 }
 
 .hflex {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .vflex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 nav {
     position: fixed;
@@ -99,13 +99,10 @@ nav {
 }
 
 .navpart {
-    padding: 0 20px;
+    color: var(--main);
     display: flex;
     align-items: center;
-}
-
-.navpart {
-    color: var(--main);
+    padding: 0 20px;
     filter: brightness(0.8);
     text-decoration: none;
     user-select: none;
