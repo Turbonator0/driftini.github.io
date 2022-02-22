@@ -1,3 +1,7 @@
+/*@license Unlicense
+http://unlicense.org/UNLICENSE
+magnet:?xt=urn:btih:5ac446d35272cc2e4e85e4325b146d0b7ca8f50c&dn=unlicense.txt
+*/
 let footer = document.createElement("footer")
 footer.innerHTML = `
 <span class="social">
@@ -38,3 +42,4 @@ nav.innerHTML = `
 
 document.body.appendChild(nav)
 document.body.appendChild(footer)
+// @license-end
